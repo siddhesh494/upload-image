@@ -25,6 +25,7 @@ const Home = () => {
 
   return (
     <div style={{
+      margin: "20px",
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column'
