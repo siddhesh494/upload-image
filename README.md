@@ -10,17 +10,13 @@ This is a simple NextJS application that allows users to upload images and displ
 - Upload an image and display it on the main page as a 300x300 px image.
 - Uses Supabase for storage.
 
-
-## Running Locally
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Step to run it locally
+  ### Clone the project
+  ### Run the command
+  ```bash
+    npm install
+    npm run dev
+  ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

@@ -33,15 +33,20 @@ const Home = () => {
       <h1>Image Upload</h1>
       <ImageUpload onUpload={fetchImages} />
       <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: "50px", justifyContent: 'center' }}>
-        {images.map((image) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            key={image.name}
-            src={getPublicUrl(image.name) || ''}
-            alt={image.name}
-            style={{ width: 300, height: 300, objectFit: 'cover', margin: "5px" }}
-          />
-        ))}
+        {images.length ? (
+          images.map((image) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={image.name}
+              src={getPublicUrl(image.name) || ''}
+              alt={image.name}
+              style={{ width: 300, height: 300, objectFit: 'cover', margin: "5px" }}
+            />
+          ))
+        ) : (
+          <h3>No Image found</h3>
+        )}
+        
       </div>
     </div>
   );
